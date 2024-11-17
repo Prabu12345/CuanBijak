@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar - CuanBijak</title>
+    <link rel="stylesheet" href="../style.css" />
     <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -31,7 +32,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Daftar</button>
             </form>
-            <p class="text-center mt-3">Sudah punya akun? <a href="login.html">Login di sini</a></p>
+            <p class="text-center mt-3">Sudah punya akun? <a href="login.php">Login di sini</a></p>
         </div>
     </div>
 
@@ -39,7 +40,7 @@
         window.onload = function () {
             const isLoggedIn = localStorage.getItem("isLoggedIn");
             if (isLoggedIn) {
-                window.location.href = "dashboard.html";
+                window.location.href = "dashboard.php";
             }
         };
         // Fungsi untuk menyimpan data pengguna ke localStorage
@@ -62,9 +63,11 @@
             localStorage.setItem("user_" + email, JSON.stringify(userData));
 
             alert("Registrasi berhasil! Silakan login.");
-            window.location.href = "login.html";
+            window.location.href = "login.php";
         });
     </script>
+    <footer class="footer">
+        <p>&copy; 2024 22552011195_M.Prabu Kiandamar Utoyo_TIF PK 22. All Rights Reserved.</p>
+    </footer>
 </body>
-
 </html>

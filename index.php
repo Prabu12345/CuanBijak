@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Topbar Example</title>
+    <title>CuanBijak</title>
     <!-- Bootstrap CSS -->
     <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
@@ -29,8 +29,8 @@
 
         <!-- Login and Sign Up buttons -->
         <div class="a-flex ms-auto me-2">
-            <a href="pages/login.html" class="btn btn-outline-light me-2">Login</a>
-            <a href="pages/register.html" class="btn btn-light">Sign Up</a>
+            <a href="pages/login.php" class="btn btn-outline-light me-2">Login</a>
+            <a href="pages/register.php" class="btn btn-light">Sign Up</a>
         </div>
 
         <!-- Collapse button for mobile -->
@@ -97,7 +97,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 CuanBijak. All Rights Reserved.</p>
+        <p>&copy; 2024 22552011195_M.Prabu Kiandamar Utoyo_TIF PK 22. All Rights Reserved.</p>
     </footer>
 
 

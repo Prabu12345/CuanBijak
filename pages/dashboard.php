@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - CuanBijak</title>
     <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
@@ -47,12 +48,18 @@
         </div>
     </div>
 
+    <div class="container d-flex justify-content-center align-items-center vh-100"></div>
+
+    <footer class="footer">
+        <p>&copy; 2024 22552011195_M.Prabu Kiandamar Utoyo_TIF PK 22. All Rights Reserved.</p>
+    </footer>
+
     <script>
         // Fungsi untuk cek status login
         window.onload = function () {
             const isLoggedIn = localStorage.getItem("isLoggedIn");
             if (!isLoggedIn) {
-                window.location.href = "login.html";
+                window.location.href = "login.php";
             }
         };
 
@@ -60,10 +67,11 @@
             localStorage.removeItem("isLoggedIn");
             localStorage.removeItem("loggedInUser");
             alert("Anda telah logout.");
-            window.location.href = "login.html";
+            window.location.href = "login.php";
         }
     </script>
-    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.js"></script>
 </body>
-
 </html>

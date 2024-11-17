@@ -1,3 +1,17 @@
+<?php 
+    // $db_hostname = 'localhost';
+    // $db_username = 'root';
+    // $db_password = '';
+    // $db_name = 'cuanbijak';
+
+    // try {
+    //     $db_connection = new PDO("mysql:host=$db_hostname;dbname=$db_name", $db_username, $db_password);
+    //     echo('Koneksi Berhasil');
+    // } catch (PDOException $e) {
+    //     die($e->getMessage());
+    // }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +19,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - CuanBijak</title>
+    <link rel="stylesheet" href="../style.css" />
     <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -23,16 +38,20 @@
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Login</button>
             </form>
-            <p class="text-center mt-3"><a href="#">Lupa Kata Sandi?</a> | <a href="register.html">Daftar Akun Baru</a>
+            <p class="text-center mt-3"><a href="#">Lupa Kata Sandi?</a> | <a href="register.php">Daftar Akun Baru</a>
             </p>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 22552011195_M.Prabu Kiandamar Utoyo_TIF PK 22. All Rights Reserved.</p>
+    </footer>
 
     <script>
         window.onload = function () {
             const isLoggedIn = localStorage.getItem("isLoggedIn");
             if (isLoggedIn) {
-                window.location.href = "dashboard.html";
+                window.location.href = "dashboard.php";
             }
         };
         // Fungsi untuk login pengguna
@@ -52,7 +71,7 @@
                     localStorage.setItem("isLoggedIn", "true");
                     localStorage.setItem("loggedInUser", email);
                     alert("Login berhasil!");
-                    window.location.href = "dashboard.html"; // Redirect ke halaman home
+                    window.location.href = "dashboard.php"; // Redirect ke halaman home
                 } else {
                     alert("Password salah!");
                 }
@@ -62,5 +81,4 @@
         });
     </script>
 </body>
-
 </html>
